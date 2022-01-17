@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=hhaaamk-auth-test
+Exec=/usr/share/hamonikr-auth/hamonikr-auth  --no-sandbox
+Icon=hamonikr-auth
+Comment=hamonikr-auth
+Type=Application
+X-GNOME-Autostart-enabled=true
+StartupNotify=false
+Categories=Settings
+X-GNOME-Autostart-Delay=0

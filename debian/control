@@ -1,0 +1,12 @@
+Source: hamonikr-auth
+Section: unknown
+Priority: optional
+Maintainer: HamoniKR Team <hamonikr-packages@googlegroups.com>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: https://hamonikr.org
+
+Package: hamonikr-auth
+Architecture: any
+Depends: 
+Description: Hamonikr auth 

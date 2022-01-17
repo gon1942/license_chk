@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# make uuid 
+# uuid=`cat /etc/machine-id`
+# echo "$uuid" >> /etc/hamonize/uuid
+
+# sudo systemctl daemon-reload
+# sudo systemctl enable hamonikr-auth
+# sudo systemctl start hamonikr-auth
+
+
+
+
+update-mime-database /usr/share/mime || true
+update-desktop-database /usr/share/applications || true
+
+chmod +x /usr/share/applications/hamonikr-auth.desktop
+
+#cp /usr/share/applications/${executable}.desktop /etc/skel/.config/autostart
+
+# for u in $(ls /home)
+# do
+# cp /usr/share/applications/hamonikr-support.desktop /home/$u/Desktop/
+# chown $u:$u /home/$u/Desktop/hamonikr-support.desktop
+# done
+
+
+userid=`sudo who | cut -d' ' -f 1`
+cp /usr/share/applications/hamonikr-auth.desktop  /home/${userid}/.config/autostart/hamonikr-auth.desktop
+chown $userid:$userid /home/${userid}/.config/autostart/hamonikr-auth.desktop

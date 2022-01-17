@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+
+
+# delete 
+
+userid=`sudo who | cut -d' ' -f 1`
+
+rm -fr /home/${userid}/.config/autostart/hamonikr-auth.desktop
+rm -fr /usr/share/hamonikr-auth
