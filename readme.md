@@ -7,3 +7,6 @@ dpkg-buildpackage -T clean
 dpkg-buildpackage -b -us -uc -ui 
 ```
 <br>
+
+
+Vue + Electron Application on Ubuntu 
